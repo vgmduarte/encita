@@ -1,0 +1,299 @@
+\documentclass[brazilian, fleqn, 10pt]{article}
+\usepackage[portuguese]{babel}
+\usepackage{fontspec}
+\usepackage[compact]{titlesec}
+\usepackage{indentfirst}
+\usepackage[margin=2cm]{geometry}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs, multirow}
+\usepackage{siunitx}
+\usepackage{upgreek}
+\usepackage{fancyhdr}
+\usepackage[capitalise]{cleveref}
+\usepackage[backend=biber, natbib=true, style=bath, maxcitenames=1]{biblatex}
+\defbibheading{}{}
+\addbibresource{references.bib}
+
+\setlength{\parindent}{1.8em}
+\captionsetup[figure]{singlelinecheck=false, format=hang, justification=raggedright}
+\captionsetup[table]{singlelinecheck=false, format=hang, justification=raggedright, skip=0pt}
+\setmainfont{Times New Roman}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+\makeatletter
+\renewcommand*{\@seccntformat}[1]{\csname the#1\endcsname.\hspace{0.1cm}}
+\makeatother
+\crefformat{table}{Tab. #1}
+\Crefformat{table}{Tabela #1}
+
+\renewcommand\sec[1]{%
+    \medskip
+    \section{#1}
+    \medskip
+}
+\newcommand\ssec[1]{%
+    \medskip
+    \subsection{#1}
+    \medskip
+}
+\newcommand\sssec[1]{%
+    \medskip
+    \subsubsection{#1}
+    \medskip
+}
+\newcommand\be[1]{%
+    \medskip
+    \begin{#1}
+}
+\newcommand\ee[1]{%
+    \end{#1}
+
+    \medskip
+}
+
+% MUDAR DATA -----------------------------------
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textit{\small Anais do XXVI ENCITA, ITA, 7 de novembro de 2020}}
+\rhead{\small ENCITA-nome do primeiro autor}
+
+\fancypagestyle{firstpage}
+{
+    \fancyhf{}
+    \lhead{\small ENCITA-nome do primeiro autor \\ \textit{Anais do XXVI Encontro de Iniciação Científica e Pós-Graduação do
+    ITA - XXVI ENCITA / 2020} \\\textit{Instituto Tecnológico de Aeronáutica, São
+    José dos Campos, SP, Brasil, 7 de novembro de 2020}}
+}
+
+% FONT SIZE CHEAT SHEET ------------------------
+% Essa cheat sheet só serve para \documentclass[10pt]{article}
+% \tiny 	         5 pt
+% \scriptsize 	     7 pt
+% \footnotesize 	 8 pt 
+% \small 	         9 pt 	
+% \normalsize 	    10 pt 	
+% \large 	        12 pt 	
+% \Large 	        14 pt 	
+% \LARGE 	        17 pt 	
+% \huge 	        20 pt 	
+% \Huge 	        25 pt 	
+
+% Esse documento deve ser compilado utilizando XeLaTeX
+% No Overleaf, vá em Menú (canto superior esquerdo) -> Compiler e mude para XeLaTeX no drop-down menu
+\begin{document}
+
+\thispagestyle{firstpage}
+
+$ $
+
+\begin{center}
+    \Large \textbf{INSTRUÇÕES PARA A FORMATAÇÃO DE TRABALHOS SUBMETIDOS AO XXVI
+    ENCITA}
+\end{center}
+
+\vspace{14pt}
+
+\noindent \textbf{Nome do primeiro autor}
+
+\noindent \small Nome da instituição e endereço para correspondência \normalsize
+
+% \noindent Bolsista PIBIC-CNPq % descomentar caso se aplique
+
+\noindent \small E-mail \normalsize
+
+\medskip
+
+\noindent \textbf{Nome do segundo autor}
+
+\noindent \small Nome da instituição e endereço para correspondência \normalsize
+
+% \noindent Bolsista PIBIC-CNPq % descomentar caso se aplique
+
+\noindent \small E-mail \normalsize
+
+% Obs.: o orientador também é um dos co-autores
+
+\medskip
+\noindent \small
+\emph{%
+    \textbf{Resumo.}
+    O propósito deste template e servir como modelo de um trabalho a ser
+    publicado nos Anais do ENCITA. O resumo deve descrever os objetivos, a
+    metodologia e as principais conclusões em não mais de 200 palavras. Ele não
+    deve conter fórmulas nem deduções matemáticas. Figuras também não devem
+    fazer parte do resumo. O texto deve estar na formatação: Times New Roman,
+    italic, size 9.
+} \normalsize
+
+\medskip
+\noindent \small
+\emph{%
+    Palavras-chave: palavra-chave 1, palavra-chave 2, palavra-chave 3,
+    palavra-chave 4, palavra-chave 5. (até 5)
+} \normalsize
+
+\sec{Introdução}
+
+% DEFASADO
+% Para inscrever-se no ENCITA o aluno deverá entregar um artigo na secretaria de
+% Divisão de Pós-Graduação e Pesquisa. Os artigos deverão ser entregues
+% primeiramente em uma cópia impressa. Depois de serem aceitos, os alunos deverão
+% enviar a secretária da Divisão de Pós-Graduação e Pesquisa a versão final, em
+% uma cópia eletrônica, no formato PDF.
+
+Os Anais do ENCITA serão publicados no site da biblioteca do ITA. Para ser
+publicado, o trabalho deve obedecer esta instrução, com respeito ao formato do
+texto e qualidade das figuras e tabelas.
+
+Código do trabalho na primeira linha. IMPORTANTE: O autor deve inserir o código
+do seu trabalho no formato ENCITA-(nome do primeiro autor).
+
+Os manuscritos devem ser submetidos em Português. O trabalho deve ser digitado
+em papel tamanho A4, usando fonte Times Roman, tamanho 10, exceto para o código
+do trabalho, o título, os nomes dos autores e afiliações, o resumo e as palavras-chave. 
+
+O trabalho é limitado a 12 (doze) páginas, incluindo tabelas e figuras.
+
+Os nomes dos autores e afiliações devem aparecer já na 1ª versão submetida para
+revisão. Caso o trabalho seja aceito sem modificações, os autores não precisarão
+enviar nova versão.
+
+Na introdução deve constar a justificativa do trabalho, contextualização e breve
+revisão da literatura. Os objetivos do trabalho também devem estar no final da
+introdução.
+
+\sec{Título das seções}
+
+O corpo de texto segue a mesma formatação da introdução. Sugere-se que as seções
+sejam: 1. Introdução; 2. Material e Métodos; 3. Resultados e Discussão; 4.
+Conclusões e Recomendações; 5. Agradecimentos; 6. Referências.
+
+\ssec{Título das sub-seções}
+
+Os títulos e subtítulos das seções devem ser digitados com fonte Times Roman,
+tamanho 10, estilo negrito, e alinhados à esquerda. Eles devem ser numerados,
+usando numerais arábicos separados por pontos, até o máximo de 3 subníveis. Uma
+linha em branco de espaçamento simples deve ser incluída acima e abaixo de cada
+título/subtítulo.
+
+\ssec{Corpo do texto}
+
+O corpo do texto deve ser justificado. A primeira linha de cada parágrafo tem
+recuo de 10 espaços contados a partir da margem esquerda.
+
+As equações matemáticas devem ser alinhadas à esquerda e citadas como \cref{eq:firsteq} no
+meio da frase, ou por \Cref{eq:firsteq} no início de uma frase. Os números das
+equações são numerais arábicos colocados entre parênteses, e alinhados à
+direita, como mostrado na \cref{eq:firsteq}.
+
+Os símbolos usados nas equações devem ser definidos imediatamente antes ou
+depois de sua primeira ocorrência no texto do trabalho.
+
+\newpage
+
+O tamanho da fonte usado nas equações deve ser compatível com o utilizado no
+texto. Todos os símbolos devem ter suas unidades expressas no S.I. (Sistema
+Internacional).
+\be{equation} \label{eq:firsteq}
+    \frac{d C}{d w} = \frac{d u}{d w} \cdot \vb{F}_u + \frac{d v}{d w} \cdot \vb{F}_v
+\ee{equation}
+
+As figuras devem ser centralizadas e referenciadas como \cref{fig:firstfig} no meio da frase
+ou por \Cref{fig:firstfig}, caso apareçam no início. As anotações e numerações devem ter
+tamanhos compatíveis com o da fonte usada no texto, e todas as unidades devem
+ser expressas no S.I. (Sistema Internacional). Cada figura deve ser colocada na
+posição mais próxima possível de sua primeira citação no texto. Deixe uma linha
+em branco entre as figuras e o texto. As legendas das figuras devem ser
+alinhadas à esquerda.
+
+\begin{figure}[!htbp]
+    \medskip
+    \centering
+    \includegraphics[width=0.3\textwidth]{example-grid-100x100pt}
+    \caption{Legenda da figura.}
+    \label{fig:firstfig}
+\end{figure}
+
+Figuras coloridas e fotografias de alta qualidade podem ser incluídas no
+trabalho. É recomendável que qualquer figura inserida no trabalho esteja no
+formato GIFF ou JPG.
+
+As tabelas devem ser centralizadas e referidas por \cref{tab:flex} no meio da frase, ou
+por \Cref{tab:flex} no início de uma sentença. Os títulos das tabelas devem ser
+localizados imediatamente acima da tabela. Anotações e valores numéricos nela
+incluídos devem ter tamanhos compatíveis com o da fonte usada no texto do
+trabalho, e todas as unidades devem ser expressas no S.I. (Sistema
+Internacional). As unidades são incluídas apenas na primeira linha/coluna,
+conforme for apropriado. As tabelas devem ser colocadas tão perto, o quanto
+possível, de sua primeira citação no texto. Deixe uma linha simples em branco
+entre a tabela, seu título e o texto. O estilo de borda da tabela é livre.
+Exemplos são apresentados na \cref{tab:flex} e na \cref{tab:proc}.
+
+\begin{table}[!htp]
+    \centering
+    \caption{Resultados experimentais para as
+    propriedades de flexão dos materiais MAT1 and MAT2. Valores médios de
+    obtidos em 20 ensaios.}
+    \label{tab:flex}
+    \scriptsize
+    \begin{tabular}{cccc}\toprule
+    Propriedades do Compósito &CFRC-TWILL &CFRC-4HS \\\midrule
+    Resistência à Flexão (MPa) &$209 \pm 10$ &$180 \pm 15$ \\
+    Módulo de Flexão (GPa) &$57 \pm 3$ &$18 \pm 1$ \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+As legendas das figuras e das tabelas não devem exceder 3 linhas. A segunda e a
+terceira linhas devem ter recuos, como mostrado na legenda da \cref{tab:flex}.
+
+\begin{table}[!htp]\centering
+    \caption{Propriedades após o processamento.}
+    \label{tab:proc}
+    \scriptsize
+    \begin{tabular}{cccc}\toprule
+    Tipo de processamento &Propriedade 1 &Propriedade 2 \\
+    &(\%) &(\si{\upmu m}) \\\midrule
+    Processo 1 &40.0 &22.7 \\
+    Processo 2 &48.4 &13.9 \\
+    Processo 3 &39.0 &22.5 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+A citação das referências no corpo do texto pode ser feita nos formatos:
+Bordallo et al. (1989) mostra que o corpo..., ou: Observa-se uma variação linear
+da pressão na periferia do rotor, como mostram (Coimbra, 1978; Clark, 1986 e
+Sparrow, 1980), que os valores de rigidez da viga... 
+
+Referências aceitáveis incluem: artigos de periódicos, dissertações, teses,
+artigos publicados em anais de congressos, ``preprints'' de congressos, livros,
+artigos submetidos e aceitos (identificar a fonte), comunicações privadas.
+
+\sec{Agradecimentos}
+
+Esta seção deve ser colocada antes da lista de referências. Não esquecer do
+agradecimento ao CNPq.
+
+\sec{Lista de referências}
+
+A lista de referências constitui a última seção do trabalho, sendo denominada
+“Referências”.
+
+A primeira linha de cada referência é alinhada à esquerda; todas as outras
+linhas têm recuo de 10 espaços da margem esquerda. Todas as referências
+incluídas na lista devem aparecer como citações no texto do trabalho.
+
+As referências devem ser postas em ordem alfabética, usando o último nome do
+primeiro autor, seguida do ano da publicação. Exemplo da lista de referências é
+apresentado a seguir:
+
+\citep{Griffiths2004,Bickelhaupt2000,Gell-Mann1957}
+
+\printbibliography[title={5. Referências}]
+
+\end{document}
