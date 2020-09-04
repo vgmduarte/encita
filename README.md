@@ -1,7 +1,7 @@
 # encitex
 Template em LaTeX para Artigos do Encontro de Iniciação Cientifica do Instituto Tecnológico de Aeronáutica - ENCITA.
 
-Esse template é uma tentativa de obedecer as regras de publicação de um artigo no ENCITA XXVI (2020). Não há garantia de que artigos submetidos a partir dele serão aceitados sem modificações.
+Esse template é uma tentativa de obedecer as regras de publicação de um artigo no ENCITA XXVI (2020). Não há garantia de que artigos submetidos a partir dele serão aceitos sem modificações.
 
 ## como usar
 
