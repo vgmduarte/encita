@@ -11,7 +11,7 @@ Instale o [git](https://git-scm.com/downloads) e clone este repositório:
 git clone https://github.com/vgmduarte/encitex.git # Cloning into 'encitex'...
 ```
 
-Será criada uma pasta ```encitex``` com todos os arquivos. Alternativamente, você pode criar um repositório próprio próprio no Github utilizando este como template clicando no botão "Use this template".
+Será criada uma pasta ```encitex``` com todos os arquivos. Alternativamente, você pode clicar em "Use this template" para criar um repositório próprio no Github a partir deste template.
 
 Esse projeto requer o uso do compilador XeLaTeX. Na plataforma [Overleaf](https://www.overleaf.com/), é possível mudar o compilador em Menu (canto superior esquerdo) - Settings - Compiler.
 
